@@ -11,7 +11,7 @@ This is a link bookmarking [NextJs](https://nextjs.org/) application using [grap
 
 ## What I Learned
 
-  1. How to use prisma as an ORM and set it up for the project
+  1. How to use prisma as an ORM and set it up for a project
   2. How to setup Postgres Locally
   3. The usefulness of prisma db push
   
