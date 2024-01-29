@@ -1,5 +1,5 @@
 import React from 'react';
-import { AwesomeLink } from '../components/AwesomeLink';
+import { LinkMark } from '../components/LinkMark';
 import { gql, useQuery } from '@apollo/client';
 import type { Link } from '.prisma/client';
 
@@ -36,7 +36,7 @@ const Favorites = () => {
           ) : (
             data.favorites.bookmarks.map((link: Link) => (
               <div key={link.id}>
-                <AwesomeLink
+                <LinkMark
                   title={link.title}
                   description={link.description}
                   category={link.category}

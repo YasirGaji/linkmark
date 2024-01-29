@@ -9,7 +9,7 @@ interface Props {
   id: number;
 }
 
-export const AwesomeLink: React.FC<Props> = ({
+export const LinkMark: React.FC<Props> = ({
   imageUrl,
   url,
   title,

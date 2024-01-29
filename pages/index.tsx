@@ -1,10 +1,10 @@
 // /pages/index.tsx
 import Head from "next/head";
 import { gql, useQuery, useMutation } from "@apollo/client";
-import { AwesomeLink } from "../components/AwesomeLink";
 import type { Link as Node } from "@prisma/client";
 import Link from "next/link";
 import { useUser } from "@auth0/nextjs-auth0/client";
+import { LinkMark } from "../components/LinkMark";
 
 const AllLinksQuery = gql`
   query allLinksQuery($first: Int, $after: ID) {
@@ -37,7 +37,7 @@ function Home() {
   if (!user) {
     return (
       <div className="flex items-center justify-center">
-        To view the awesome links you need to{' '}
+        To view bookmarked links you need to &#160; {' '}
         <Link href="/api/auth/login" className=" block bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
           Login
         </Link>
@@ -53,14 +53,14 @@ function Home() {
   return (
     <div>
       <Head>
-        <title>Awesome Links</title>
+        <title>linkMark</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="container mx-auto max-w-5xl my-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {data?.links.edges.map(({ node }: { node: Node }) => (
             <Link href={`/link/${node.id}`}>
-              <AwesomeLink
+              <LinkMark
                 key={node.id}
                 title={node.title}
                 category={node.category}
@@ -92,7 +92,7 @@ function Home() {
           </button>
         ) : (
           <p className="my-10 text-center font-medium">
-            You've reached the end!{" "}
+            End of the line, bookmark new links!{" "}
           </p>
         )}
       </div>
