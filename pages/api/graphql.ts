@@ -3,6 +3,9 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import { schema } from '../../graphql/schema'
 import { createContext } from '../../graphql/context'
 
+
+
+
 export default createYoga<{
   req: NextApiRequest
   res: NextApiResponse
@@ -17,3 +20,11 @@ export const config = {
     bodyParser: false
   }
 }
+
+
+
+
+import { ApolloServer } from 'apollo-server-micro'
+
+
+
