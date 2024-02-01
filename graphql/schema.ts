@@ -1,9 +1,27 @@
 // graphql/schema.ts
+// import { builder } from "./builder";
+// import "./types/Link"
+// import "./types/User"
+
+// export const schema = builder.toSchema()
+
 
 import { gql } from 'apollo-server-micro'
 
-import { builder } from "./builder";
-import "./types/Link"
-import "./types/User"
 
-export const schema = builder.toSchema()
+export const typeDefs = gql`
+  type Link {
+    id: String
+    title: String
+    description: String
+    url: String
+    category: String
+    imageUrl: String
+    users: [String]
+  }
+
+  type Query {
+    links: [Link]!
+  }
+`;
+
