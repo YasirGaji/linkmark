@@ -15,6 +15,7 @@ This is a link bookmarking [NextJs](https://nextjs.org/) application using [grap
   2. How to setup Postgres Locally
   3. The usefulness of prisma db push
   4. GraphQL and Apollo-Server-Micro endpoint
+  5. Understood the Prisma client purpose
   
 ## Errors  I Faced
 
