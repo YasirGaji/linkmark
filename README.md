@@ -16,6 +16,7 @@ This is a link bookmarking [NextJs](https://nextjs.org/) application using [grap
   3. The usefulness of prisma db push
   4. GraphQL and Apollo-Server-Micro endpoint
   5. Understood the Prisma client purpose
+  6. How to define schema using [Nexus](https://nexusjs.org) for typsafety code rendering and object completion
   
 ## Errors  I Faced
 
