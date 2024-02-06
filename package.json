@@ -16,6 +16,7 @@
     "@pothos/plugin-relay": "3.32.0",
     "@prisma/client": "^4.8.1",
     "apollo-server-micro": "^3.13.0",
+    "auth0": "^4.3.0",
     "aws-sdk": "2.1295.0",
     "graphql": "^16.6.0",
     "graphql-yoga": "3.3.0",
