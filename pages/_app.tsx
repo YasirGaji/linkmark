@@ -8,13 +8,13 @@ import apolloClient from '../lib/apollo'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <UserProvider>
+    
       <ApolloProvider client={apolloClient}>
         <Layout>
           <Component {...pageProps} />
         </Layout>
       </ApolloProvider>
-    </UserProvider>
+    
   )
 }
 
